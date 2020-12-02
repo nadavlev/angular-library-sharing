@@ -1,0 +1,10 @@
+.product-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  .product {
+    padding: 15px 15px 15px 15px;
+    margin: 15px 15px 15px 15px;
+    flex:1 1 auto;
+    width: 350px;
+  }
+}

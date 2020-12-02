@@ -14,7 +14,21 @@
 
 
 <mat-drawer-container class="example-container">
-  <mat-drawer mode="side" opened class="main-nav">Drawer content</mat-drawer>
+  <mat-drawer mode="side" opened class="main-nav">
+    <nav>
+      <ul>
+        For dev - will be removed after implementation
+        <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+        <li><a routerLink="/register" routerLinkActive="active">Register</a></li>
+        <li><a routerLink="/forgot-password" routerLinkActive="active">Forgot Password</a></li>
+
+        <li><a routerLink="/products" routerLinkActive="active">Products</a></li>
+        <li><a routerLink="/shopping-cart" routerLinkActive="active">Shopping Cart</a></li>
+        <li><a routerLink="/settings" routerLinkActive="active">Settings</a></li>
+
+      </ul>
+    </nav>
+  </mat-drawer>
   <mat-drawer-content class="main-content">
     <router-outlet></router-outlet>
   </mat-drawer-content>
