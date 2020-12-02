@@ -13,6 +13,7 @@ import {FormsModule} from '@angular/forms';
 import { ProductPageComponent } from './product-page/product-page.component';
 import {ProductsService} from './services/products.service';
 import { ProductListDisplayComponent } from './product-list-display/product-list-display.component';
+import {SpecialHeaderModule} from 'special-header';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ProductListDisplayComponent } from './product-list-display/product-list
     LoginModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    SpecialHeaderModule
   ],
   providers: [
     ProductsService

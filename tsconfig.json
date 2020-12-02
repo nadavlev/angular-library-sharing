@@ -23,12 +23,20 @@
       "login": [
         "dist/login/login",
         "dist/login"
+      ],
+      "@angular/*": [
+        "./node_modules/@angular/*"
+      ],
+      "special-header": [
+        "dist/special-header/special-header",
+        "dist/special-header"
       ]
     }
   },
   "angularCompilerOptions": {
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+    "strictPropertyInitialization": false
   }
 }

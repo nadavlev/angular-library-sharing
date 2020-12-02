@@ -196,6 +196,7 @@
               "projects/bank/src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
               "projects/bank/src/styles.scss"
             ],
             "scripts": []
@@ -259,6 +260,7 @@
               "projects/bank/src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/purple-green.css",
               "projects/bank/src/styles.scss"
             ],
             "scripts": []
@@ -287,6 +289,46 @@
             "production": {
               "devServerTarget": "bank:serve:production"
             }
+          }
+        }
+      }
+    },
+    "special-header": {
+      "projectType": "library",
+      "root": "projects/special-header",
+      "sourceRoot": "projects/special-header/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/special-header/tsconfig.lib.json",
+            "project": "projects/special-header/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/special-header/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/special-header/src/test.ts",
+            "tsConfig": "projects/special-header/tsconfig.spec.json",
+            "karmaConfig": "projects/special-header/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/special-header/tsconfig.lib.json",
+              "projects/special-header/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
